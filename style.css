@@ -7,9 +7,11 @@ body{
 }
 .main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin:100px  30%;
     background-color: white;   
+    text-align: center;
 }
 h2{
     margin: 10px auto;
@@ -26,7 +28,27 @@ h2{
     
     width: 30vw;
 }
-
+.tasks{
+    
+}
+.note{
+    background-color: #ebebeb;
+    padding: 10px;
+    display: block;
+    margin: 10px 0px;
+    width: 75%;
+}
+.li_items{
+display: flex; 
+ align-items: center;
+}
+#delete{
+    display: none;
+    background-color: blue;
+}
+.li_items:hover #delete{
+    display: block;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -52,5 +74,14 @@ h2{
     #input{
         width: 60vw;
     }
+    .note{
+        background-color: #ebebeb;
+        padding: 10px;
+        display: block;
+        margin: 10px 0px;
+        
+        width: 80%;
+    }
+   
 
 }
