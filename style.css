@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-image: linear-gradient(90deg,cyan,blue);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin:100px  30%;
+    background-color: white;   
+}
+.input_field div{
+    display: flex;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+@media only screen and (max-width: 800px){
+
+    .main{
+        margin:100px  10%;
+    }
+
+}
