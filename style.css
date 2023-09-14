@@ -41,6 +41,10 @@ h2{
 .li_items{
 display: flex; 
  align-items: center;
+ 
+}
+ul{
+    list-style: none;
 }
 #delete{
     display: none;
@@ -62,8 +66,11 @@ display: flex;
   padding: 5px 15px;
   margin: 0px 2px;
   border-radius: 3px;
+  user-select: none;
 }
-
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 800px){
 
@@ -80,7 +87,11 @@ display: flex;
         display: block;
         margin: 10px 0px;
         
-        width: 80%;
+        width: 65%;
+    }
+    #delete{
+        display: block;
+        background-color: blue;
     }
    
 
