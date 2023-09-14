@@ -1,98 +1,102 @@
-*{
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
-body{
-    background-image: linear-gradient(90deg,cyan,blue);
+
+body {
+    background-image: linear-gradient(90deg, cyan, blue);
 }
-.main{
+
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:100px  30%;
-    background-color: white;   
+    margin: 100px 30%;
+    background-color: white;
     text-align: center;
 }
-h2{
+
+h2 {
     margin: 10px auto;
 }
-.input_field{
+
+.input_field {
     margin: 30px auto;
 }
 
-.input_field div{
+.input_field div {
     display: flex;
     margin-top: 20px;
 }
-#input{
-    
+
+#input {
     width: 30vw;
 }
-.tasks{
-    
+
+.tasks {
 }
-.note{
+
+.note {
     background-color: #ebebeb;
     padding: 10px;
     display: block;
     margin: 10px 0px;
     width: 75%;
 }
-.li_items{
-display: flex; 
- align-items: center;
- 
+
+.li_items {
+    display: flex;
+    align-items: center;
 }
-ul{
+
+ul {
     list-style: none;
 }
-#delete{
+
+.delete {
     display: none;
+}
+.li_items{
+    margin-left: 30px;
+}
+.li_items:hover .delete{
+    display: block;
     background-color: blue;
 }
-.li_items:hover #delete{
-    display: block;
-}
-
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
-
-  background-color: red;
-  color: white;
-  padding: 5px 15px;
-  margin: 0px 2px;
-  border-radius: 3px;
-  user-select: none;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    margin: 0px 2px;
+    border-radius: 3px;
+    user-select: none;
 }
-.material-symbols-outlined:hover{
+
+.material-symbols-outlined:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 800px){
-
-    .main{
-        margin:100px  5%;
-        
+@media only screen and (max-width: 800px) {
+    .main {
+        margin: 100px 5%;
     }
-    #input{
+
+    #input {
         width: 60vw;
     }
-    .note{
+
+    .note {
         background-color: #ebebeb;
         padding: 10px;
         display: block;
         margin: 10px 0px;
-        
         width: 65%;
     }
-    #delete{
+
+    .delete {
         display: block;
         background-color: blue;
     }
-   
-
 }
