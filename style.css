@@ -11,8 +11,20 @@ body{
     margin:100px  30%;
     background-color: white;   
 }
+h2{
+    margin: 10px auto;
+}
+.input_field{
+    margin: 30px auto;
+}
+
 .input_field div{
     display: flex;
+    margin-top: 20px;
+}
+#input{
+    
+    width: 30vw;
 }
 
 
@@ -21,14 +33,24 @@ body{
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
+
+  background-color: red;
+  color: white;
+  padding: 5px 15px;
+  margin: 0px 2px;
+  border-radius: 3px;
 }
 
 
 @media only screen and (max-width: 800px){
 
     .main{
-        margin:100px  10%;
+        margin:100px  5%;
+        
+    }
+    #input{
+        width: 60vw;
     }
 
 }
